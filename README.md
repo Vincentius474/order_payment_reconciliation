@@ -20,8 +20,6 @@ A comprehensive data reconciliation system for e-commerce order and payment vali
 - [Reconciliation Logic](#reconciliation-logic)
 - [Visualization](#visualization)
 - [Output Examples](#output-examples)
-- [Extending the Project](#extending-the-project)
-- [Common Issues & Solutions](#common-issues--solutions)
 - [Contributing](#contributing)
 - [License](#license)
 
