@@ -1,0 +1,2 @@
+total_orders,total_order_value,total_paid,total_difference,orders_fully_paid,orders_underpaid,orders_overpaid,orders_no_payment,total_underpayment_amount,total_overpayment_amount
+500,830296.0700000001,682280.4299999999,148015.64,296,60,60,84,176317.82,28302.18
