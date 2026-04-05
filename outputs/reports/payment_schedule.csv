@@ -1,0 +1,408 @@
+order_id,days_to_first_payment,days_to_last_payment,num_payments,payment_methods
+ORD-00001,-1,-1,1,paypal
+ORD-00002,8,8,1,bank_transfer
+ORD-00003,5,5,1,credit_card
+ORD-00004,0,0,1,credit_card
+ORD-00005,3,7,2,"bank_transfer, crypto"
+ORD-00006,-1,-1,1,paypal
+ORD-00007,2,2,1,credit_card
+ORD-00008,-1,-1,1,credit_card
+ORD-00009,-1,-1,1,crypto
+ORD-00010,-1,-1,1,bank_transfer
+ORD-00011,-1,-1,1,paypal
+ORD-00012,4,4,1,credit_card
+ORD-00013,5,5,1,credit_card
+ORD-00014,4,4,1,paypal
+ORD-00015,1,1,1,paypal
+ORD-00016,2,2,1,credit_card
+ORD-00017,4,4,1,credit_card
+ORD-00019,1,1,1,credit_card
+ORD-00020,8,8,1,credit_card
+ORD-00021,-1,-1,1,bank_transfer
+ORD-00022,-1,-1,1,credit_card
+ORD-00023,-1,-1,1,bank_transfer
+ORD-00024,1,1,1,credit_card
+ORD-00025,-1,-1,1,credit_card
+ORD-00026,-1,0,2,credit_card
+ORD-00027,-1,-1,1,credit_card
+ORD-00028,3,3,1,credit_card
+ORD-00029,5,5,1,credit_card
+ORD-00030,0,0,1,credit_card
+ORD-00031,0,0,1,credit_card
+ORD-00033,0,0,1,credit_card
+ORD-00034,0,0,1,bank_transfer
+ORD-00035,1,1,1,credit_card
+ORD-00036,2,2,1,credit_card
+ORD-00037,7,7,1,bank_transfer
+ORD-00038,6,6,1,credit_card
+ORD-00039,2,2,1,credit_card
+ORD-00041,4,4,1,paypal
+ORD-00042,-1,-1,1,credit_card
+ORD-00043,3,3,1,credit_card
+ORD-00045,2,4,2,"paypal, bank_transfer"
+ORD-00046,0,0,1,credit_card
+ORD-00047,-1,-1,1,credit_card
+ORD-00048,-1,-1,1,paypal
+ORD-00049,3,3,1,crypto
+ORD-00050,-1,-1,1,paypal
+ORD-00051,0,0,1,paypal
+ORD-00053,-1,-1,1,credit_card
+ORD-00054,-1,-1,1,credit_card
+ORD-00055,2,3,2,"crypto, paypal"
+ORD-00056,6,6,1,bank_transfer
+ORD-00057,2,2,1,credit_card
+ORD-00058,-1,-1,1,credit_card
+ORD-00060,3,3,1,credit_card
+ORD-00061,0,0,1,credit_card
+ORD-00062,1,1,1,paypal
+ORD-00063,4,9,2,"crypto, bank_transfer"
+ORD-00064,-1,5,3,"paypal, credit_card"
+ORD-00065,0,0,1,credit_card
+ORD-00066,0,0,1,paypal
+ORD-00067,-1,-1,1,credit_card
+ORD-00068,0,0,1,bank_transfer
+ORD-00069,4,4,1,credit_card
+ORD-00070,2,2,1,credit_card
+ORD-00072,4,4,1,credit_card
+ORD-00073,2,2,1,credit_card
+ORD-00075,2,2,1,paypal
+ORD-00076,0,0,1,credit_card
+ORD-00077,4,5,2,"credit_card, crypto"
+ORD-00079,2,2,1,paypal
+ORD-00080,2,2,1,paypal
+ORD-00081,-1,1,3,"credit_card, crypto"
+ORD-00082,1,3,2,"credit_card, crypto"
+ORD-00083,4,4,2,"paypal, crypto"
+ORD-00084,5,5,1,credit_card
+ORD-00085,1,1,1,bank_transfer
+ORD-00086,1,4,2,"crypto, credit_card"
+ORD-00087,3,3,1,credit_card
+ORD-00088,-1,-1,1,paypal
+ORD-00089,2,2,1,paypal
+ORD-00090,0,0,1,credit_card
+ORD-00091,5,5,1,credit_card
+ORD-00093,-1,-1,1,paypal
+ORD-00094,2,3,2,"credit_card, crypto"
+ORD-00096,-1,-1,1,paypal
+ORD-00098,3,3,1,credit_card
+ORD-00099,5,5,1,bank_transfer
+ORD-00105,7,7,1,credit_card
+ORD-00106,4,4,1,credit_card
+ORD-00107,3,7,2,"paypal, credit_card"
+ORD-00108,2,8,3,credit_card
+ORD-00109,6,6,1,credit_card
+ORD-00110,1,1,1,paypal
+ORD-00111,-1,-1,1,crypto
+ORD-00112,0,0,1,credit_card
+ORD-00113,3,3,1,crypto
+ORD-00114,2,2,1,credit_card
+ORD-00115,4,4,1,credit_card
+ORD-00116,2,2,1,paypal
+ORD-00117,-1,-1,1,paypal
+ORD-00118,3,3,1,crypto
+ORD-00120,4,4,1,paypal
+ORD-00121,2,2,1,paypal
+ORD-00122,5,5,1,paypal
+ORD-00123,2,2,1,credit_card
+ORD-00124,4,4,1,bank_transfer
+ORD-00125,5,8,2,credit_card
+ORD-00126,4,4,1,bank_transfer
+ORD-00127,-1,-1,1,paypal
+ORD-00129,-1,-1,1,credit_card
+ORD-00130,2,2,1,crypto
+ORD-00131,5,5,1,credit_card
+ORD-00134,3,3,1,credit_card
+ORD-00135,2,4,2,credit_card
+ORD-00136,4,4,1,credit_card
+ORD-00137,4,4,1,paypal
+ORD-00138,-1,-1,1,paypal
+ORD-00139,2,2,1,bank_transfer
+ORD-00140,0,0,1,credit_card
+ORD-00141,6,6,1,credit_card
+ORD-00142,2,2,1,paypal
+ORD-00143,6,7,2,paypal
+ORD-00144,0,0,1,paypal
+ORD-00145,2,4,3,"credit_card, paypal"
+ORD-00146,-1,2,2,"paypal, credit_card"
+ORD-00147,1,1,1,paypal
+ORD-00148,2,2,1,paypal
+ORD-00150,3,5,2,credit_card
+ORD-00151,-1,-1,1,credit_card
+ORD-00152,4,4,1,credit_card
+ORD-00153,2,2,1,credit_card
+ORD-00154,1,1,1,credit_card
+ORD-00155,-1,-1,1,paypal
+ORD-00156,0,0,1,credit_card
+ORD-00157,3,3,1,bank_transfer
+ORD-00158,2,2,1,paypal
+ORD-00159,1,1,1,bank_transfer
+ORD-00160,1,5,3,"bank_transfer, credit_card, paypal"
+ORD-00161,0,0,1,credit_card
+ORD-00162,1,1,1,credit_card
+ORD-00163,1,5,2,"credit_card, bank_transfer"
+ORD-00164,2,8,3,"credit_card, paypal"
+ORD-00166,0,0,1,credit_card
+ORD-00167,1,5,3,"credit_card, paypal"
+ORD-00168,0,0,1,credit_card
+ORD-00169,5,9,3,credit_card
+ORD-00170,4,4,1,bank_transfer
+ORD-00171,4,4,1,credit_card
+ORD-00173,-1,1,2,"paypal, credit_card"
+ORD-00176,0,3,2,"credit_card, bank_transfer"
+ORD-00177,-1,-1,1,paypal
+ORD-00178,4,4,1,credit_card
+ORD-00179,3,3,1,credit_card
+ORD-00180,1,1,1,paypal
+ORD-00182,2,2,1,paypal
+ORD-00183,0,4,3,"credit_card, bank_transfer"
+ORD-00184,-1,-1,1,paypal
+ORD-00185,10,10,1,bank_transfer
+ORD-00186,3,3,1,credit_card
+ORD-00187,1,6,2,"credit_card, crypto"
+ORD-00189,7,7,1,credit_card
+ORD-00190,0,0,1,paypal
+ORD-00192,3,5,2,"credit_card, bank_transfer"
+ORD-00193,2,7,2,"paypal, credit_card"
+ORD-00194,2,2,1,paypal
+ORD-00195,-1,-1,1,paypal
+ORD-00196,1,1,1,crypto
+ORD-00197,3,3,1,credit_card
+ORD-00198,-1,5,2,credit_card
+ORD-00202,2,5,2,"credit_card, crypto"
+ORD-00203,-1,-1,1,bank_transfer
+ORD-00204,-1,1,2,"paypal, credit_card"
+ORD-00207,0,5,2,paypal
+ORD-00208,4,6,2,credit_card
+ORD-00209,5,6,2,credit_card
+ORD-00211,-1,-1,1,credit_card
+ORD-00212,3,9,2,"credit_card, paypal"
+ORD-00213,3,3,1,credit_card
+ORD-00214,-1,1,3,"credit_card, paypal"
+ORD-00215,-1,-1,1,credit_card
+ORD-00216,3,3,1,credit_card
+ORD-00217,5,6,2,"paypal, credit_card"
+ORD-00218,1,2,2,credit_card
+ORD-00219,-1,-1,1,credit_card
+ORD-00220,1,1,1,credit_card
+ORD-00222,-1,-1,1,credit_card
+ORD-00224,6,7,2,"credit_card, paypal"
+ORD-00225,1,1,1,credit_card
+ORD-00226,0,6,3,"paypal, credit_card"
+ORD-00227,-1,2,2,"credit_card, paypal"
+ORD-00229,0,1,2,"crypto, paypal"
+ORD-00231,-1,-1,1,credit_card
+ORD-00232,0,0,1,credit_card
+ORD-00233,6,7,2,"credit_card, bank_transfer"
+ORD-00234,0,0,1,credit_card
+ORD-00235,1,1,1,paypal
+ORD-00236,-1,-1,1,credit_card
+ORD-00237,-1,-1,1,credit_card
+ORD-00238,0,0,1,paypal
+ORD-00239,1,1,1,credit_card
+ORD-00240,0,0,1,bank_transfer
+ORD-00242,-1,-1,1,paypal
+ORD-00243,2,2,1,credit_card
+ORD-00244,0,0,1,credit_card
+ORD-00245,2,2,1,credit_card
+ORD-00246,0,0,1,credit_card
+ORD-00247,-1,-1,1,paypal
+ORD-00248,5,5,1,credit_card
+ORD-00249,-1,-1,1,credit_card
+ORD-00250,0,0,1,credit_card
+ORD-00251,-1,-1,1,credit_card
+ORD-00252,-1,-1,1,bank_transfer
+ORD-00253,2,2,1,credit_card
+ORD-00254,-1,-1,1,credit_card
+ORD-00255,-1,-1,1,credit_card
+ORD-00256,0,1,2,paypal
+ORD-00257,6,6,1,credit_card
+ORD-00258,2,2,1,credit_card
+ORD-00260,3,5,2,credit_card
+ORD-00262,0,0,1,credit_card
+ORD-00263,-1,4,2,"credit_card, crypto"
+ORD-00264,6,6,1,bank_transfer
+ORD-00265,3,3,1,bank_transfer
+ORD-00266,2,2,1,credit_card
+ORD-00267,5,5,1,bank_transfer
+ORD-00268,1,1,1,credit_card
+ORD-00269,0,4,2,credit_card
+ORD-00270,-1,-1,1,bank_transfer
+ORD-00271,6,6,1,credit_card
+ORD-00272,0,0,1,credit_card
+ORD-00273,1,1,1,credit_card
+ORD-00275,-1,-1,1,credit_card
+ORD-00276,4,4,1,credit_card
+ORD-00277,-1,-1,1,paypal
+ORD-00278,5,5,1,credit_card
+ORD-00279,-1,-1,1,credit_card
+ORD-00280,4,4,1,credit_card
+ORD-00282,4,4,1,paypal
+ORD-00284,-1,-1,1,credit_card
+ORD-00286,6,6,1,credit_card
+ORD-00288,3,3,1,credit_card
+ORD-00289,2,2,1,paypal
+ORD-00291,5,5,1,credit_card
+ORD-00292,6,6,1,credit_card
+ORD-00293,0,0,1,credit_card
+ORD-00294,-1,2,2,"credit_card, bank_transfer"
+ORD-00295,3,3,1,paypal
+ORD-00297,1,1,1,paypal
+ORD-00298,5,5,1,credit_card
+ORD-00299,-1,-1,1,bank_transfer
+ORD-00300,2,2,1,paypal
+ORD-00302,6,6,1,bank_transfer
+ORD-00303,-1,-1,1,credit_card
+ORD-00304,3,3,1,paypal
+ORD-00305,0,3,2,credit_card
+ORD-00306,-1,-1,1,credit_card
+ORD-00309,-1,-1,1,credit_card
+ORD-00312,7,7,1,credit_card
+ORD-00314,-1,-1,1,paypal
+ORD-00315,4,4,1,credit_card
+ORD-00316,2,2,1,credit_card
+ORD-00318,4,4,1,credit_card
+ORD-00319,5,9,3,"bank_transfer, credit_card, paypal"
+ORD-00320,3,3,1,credit_card
+ORD-00322,6,6,1,credit_card
+ORD-00324,0,0,1,credit_card
+ORD-00326,3,3,1,bank_transfer
+ORD-00328,5,5,1,crypto
+ORD-00329,0,2,2,credit_card
+ORD-00330,-1,-1,1,paypal
+ORD-00331,5,5,1,paypal
+ORD-00332,7,7,1,paypal
+ORD-00333,2,3,2,"credit_card, paypal"
+ORD-00334,1,1,1,credit_card
+ORD-00335,-1,-1,1,credit_card
+ORD-00336,1,3,3,credit_card
+ORD-00337,-1,-1,1,paypal
+ORD-00338,-1,-1,1,paypal
+ORD-00339,1,7,3,"paypal, credit_card"
+ORD-00341,6,6,1,credit_card
+ORD-00342,1,6,2,"credit_card, bank_transfer"
+ORD-00344,4,4,1,crypto
+ORD-00345,-1,-1,1,credit_card
+ORD-00346,-1,-1,1,credit_card
+ORD-00347,0,1,2,"credit_card, bank_transfer"
+ORD-00348,-1,-1,1,credit_card
+ORD-00349,6,6,1,bank_transfer
+ORD-00350,-1,1,2,"paypal, credit_card"
+ORD-00354,2,2,1,bank_transfer
+ORD-00355,4,4,1,paypal
+ORD-00356,3,3,1,credit_card
+ORD-00358,1,1,1,credit_card
+ORD-00359,0,0,1,paypal
+ORD-00360,0,0,1,crypto
+ORD-00361,1,2,2,"credit_card, bank_transfer"
+ORD-00363,3,3,1,credit_card
+ORD-00364,2,2,1,credit_card
+ORD-00365,-1,-1,1,credit_card
+ORD-00367,2,2,1,bank_transfer
+ORD-00368,-1,-1,1,bank_transfer
+ORD-00369,1,1,1,paypal
+ORD-00370,-1,-1,1,paypal
+ORD-00371,-1,-1,1,crypto
+ORD-00372,-1,-1,1,bank_transfer
+ORD-00373,1,1,1,credit_card
+ORD-00374,1,1,1,credit_card
+ORD-00375,0,0,1,credit_card
+ORD-00376,3,5,2,"credit_card, paypal"
+ORD-00377,4,4,1,credit_card
+ORD-00378,-1,-1,1,paypal
+ORD-00379,-1,-1,1,bank_transfer
+ORD-00380,4,4,1,credit_card
+ORD-00382,1,1,1,paypal
+ORD-00383,6,9,2,credit_card
+ORD-00384,-1,-1,1,paypal
+ORD-00385,2,2,1,paypal
+ORD-00386,-1,-1,1,paypal
+ORD-00389,-1,-1,1,credit_card
+ORD-00390,2,2,1,paypal
+ORD-00391,2,2,1,credit_card
+ORD-00393,5,5,1,credit_card
+ORD-00394,4,5,2,"bank_transfer, paypal"
+ORD-00395,3,3,1,credit_card
+ORD-00396,7,7,1,paypal
+ORD-00399,1,1,1,credit_card
+ORD-00400,-1,-1,1,credit_card
+ORD-00403,7,7,1,paypal
+ORD-00404,-1,-1,1,credit_card
+ORD-00405,0,4,2,"credit_card, bank_transfer"
+ORD-00406,3,3,1,credit_card
+ORD-00407,1,1,1,paypal
+ORD-00409,1,1,1,credit_card
+ORD-00410,-1,-1,1,bank_transfer
+ORD-00412,-1,-1,1,bank_transfer
+ORD-00413,4,8,2,credit_card
+ORD-00414,0,0,1,credit_card
+ORD-00416,-1,-1,1,paypal
+ORD-00417,4,7,2,"credit_card, bank_transfer"
+ORD-00418,-1,-1,1,paypal
+ORD-00419,4,8,2,"paypal, crypto"
+ORD-00420,2,2,1,paypal
+ORD-00421,0,0,1,credit_card
+ORD-00422,2,2,1,credit_card
+ORD-00423,3,3,1,paypal
+ORD-00424,2,2,1,crypto
+ORD-00425,3,3,1,paypal
+ORD-00426,-1,-1,1,crypto
+ORD-00429,2,2,1,paypal
+ORD-00431,0,0,1,credit_card
+ORD-00432,1,1,1,credit_card
+ORD-00433,2,4,2,"paypal, bank_transfer"
+ORD-00434,3,3,1,bank_transfer
+ORD-00435,2,2,1,credit_card
+ORD-00437,8,14,2,"paypal, credit_card"
+ORD-00438,0,0,1,credit_card
+ORD-00439,2,2,1,credit_card
+ORD-00440,3,3,1,credit_card
+ORD-00441,-1,-1,1,credit_card
+ORD-00442,3,3,1,credit_card
+ORD-00445,2,2,1,bank_transfer
+ORD-00446,1,3,2,"bank_transfer, crypto"
+ORD-00447,1,1,1,credit_card
+ORD-00448,3,3,1,bank_transfer
+ORD-00449,-1,-1,1,credit_card
+ORD-00450,4,4,1,credit_card
+ORD-00451,-1,-1,1,credit_card
+ORD-00452,6,6,1,paypal
+ORD-00453,4,4,1,paypal
+ORD-00454,0,0,1,crypto
+ORD-00455,3,3,1,credit_card
+ORD-00456,7,7,1,crypto
+ORD-00457,0,0,1,paypal
+ORD-00459,5,5,1,credit_card
+ORD-00460,1,4,2,bank_transfer
+ORD-00461,0,0,1,credit_card
+ORD-00462,-1,-1,1,credit_card
+ORD-00463,1,1,1,credit_card
+ORD-00464,-1,1,2,credit_card
+ORD-00465,1,1,1,paypal
+ORD-00467,2,3,2,"paypal, credit_card"
+ORD-00468,0,0,1,paypal
+ORD-00469,3,3,1,paypal
+ORD-00470,-1,1,3,"credit_card, paypal"
+ORD-00471,3,4,2,"credit_card, paypal"
+ORD-00472,-1,-1,1,credit_card
+ORD-00473,-1,-1,1,bank_transfer
+ORD-00474,1,1,1,credit_card
+ORD-00475,1,1,1,credit_card
+ORD-00476,5,5,1,credit_card
+ORD-00477,1,1,1,credit_card
+ORD-00478,9,9,1,paypal
+ORD-00480,1,1,1,paypal
+ORD-00481,1,4,2,"credit_card, crypto"
+ORD-00482,-1,-1,1,credit_card
+ORD-00484,1,1,1,credit_card
+ORD-00485,-1,-1,1,credit_card
+ORD-00486,2,2,1,credit_card
+ORD-00487,4,4,1,crypto
+ORD-00488,0,6,3,"paypal, bank_transfer"
+ORD-00490,-1,-1,1,bank_transfer
+ORD-00492,4,7,3,"credit_card, paypal"
+ORD-00493,-1,-1,1,credit_card
+ORD-00494,-1,-1,1,credit_card
+ORD-00495,-1,-1,1,credit_card
+ORD-00496,-1,-1,1,credit_card
+ORD-00497,3,3,1,crypto
+ORD-00500,-1,-1,1,credit_card

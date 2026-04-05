@@ -1,0 +1,15 @@
+Metric,Value
+Total Orders,500
+Total Order Value (USD),"$830,296.07"
+Total Payments Received (USD),"$648,298.19"
+Total Outstanding (USD),"$206,880.13"
+Orders - Complete Payment,285
+Orders - Partial Payment,122
+Orders - Missing Payment,93
+Orders - Excess Payment,0
+Total Overpayment Amount (USD),"$24,882.25"
+Total Underpayment Amount (USD),"$206,880.13"
+Average Payment per Order (USD),"$1,592.87"
+Average Days to First Payment,Calculated in schedule
+Orders with Multiple Payments,79
+High Risk Orders,44
