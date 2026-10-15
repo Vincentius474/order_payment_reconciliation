@@ -1,13 +1,12 @@
-markdown
 # Order-Payment Reconciliation System
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Code Style](https://img.shields.io/badge/code%20style-black-black.svg)](https://github.com/psf/black)
 
-A comprehensive data reconciliation system for e-commerce order and payment validation. This project demonstrates real-world data reconciliation techniques, handling complex scenarios like partial payments, overpayments, duplicates, currency conversion, and data quality issues.
+A data reconciliation system for e-commerce order and payment validation. The project matches orders from an Order Management System (OMS) against payments from a payment gateway, and handles partial payments, overpayments, duplicates, currency conversion, and data quality issues.
 
-![visualisations](OPR_Pic-1.png)
+![Reconciliation dashboard](OPR_Pic-1.png)
 
 ## Table of Contents
 
@@ -25,115 +24,132 @@ A comprehensive data reconciliation system for e-commerce order and payment vali
 
 ## Overview
 
-This project simulates a real-world e-commerce reconciliation system where orders from an Order Management System (OMS) need to be matched with payments from a Payment Gateway. It handles various edge cases and data quality issues commonly found in production systems.
+This project simulates a real-world reconciliation workflow. Synthetic orders and payments are generated with deliberate discrepancies, then reconciled to surface anything that does not add up.
 
-### Business Use Case
-- **Finance teams** need to reconcile daily transactions
-- **Auditors** verify payment completeness
-- **Operations** identifies payment anomalies
-- **Customer Support** resolves payment disputes
+**Who it helps**
+
+| Team | Use |
+| --- | --- |
+| Finance | Reconcile daily transactions |
+| Auditors | Verify payment completeness |
+| Operations | Identify payment anomalies |
+| Customer Support | Resolve payment disputes |
 
 ## Features
 
-### Core Capabilities
-- **Synthetic Data Generation** - Creates realistic orders and payments with intentional discrepancies
-- **Basic Reconciliation** - Matches orders with payments and identifies mismatches
-- **Advanced Reconciliation** - Handles currency conversion, duplicates, and partial payments
-- **Risk Detection** - Flags high-risk transactions and anomalies
-- **Interactive Dashboard** - Visual insights into payment patterns
-- **Export Reports** - CSV reports for further analysis
+**Core capabilities**
 
-### Handling Complex Scenarios
+- **Synthetic data generation:** realistic orders and payments with intentional discrepancies
+- **Basic reconciliation:** matches orders to payments and flags mismatches
+- **Advanced reconciliation:** currency conversion, duplicate detection, and partial-payment handling
+- **Risk detection:** flags high-risk transactions and anomalies
+- **Dashboard:** visual summary of payment patterns
+- **CSV reports:** exportable results for further analysis
+
+**Scenarios handled**
+
 - Partial payments and installments
 - Multi-currency transactions (USD/EUR)
 - Payment timing analysis
 - Duplicate payment detection
 - Payment method analytics
-- Data quality issue detection
+- Data quality issues (nulls, negative amounts, future dates)
 
 ## Project Structure
-order_payment_reconciliation/
-│
-├── data/
-│ ├── raw/ # Generated raw data
-│ │ ├── orders.csv
-│ │ └── payments.csv
-│ └── processed/ # Reconciliation results
-│ ├── reconciliation_basic.csv
-│ └── reconciliation_advanced.csv
-│
-├── notebooks/ # Jupyter notebooks for exploration
-│ ├── 01_data_generation.ipynb
-│ ├── 02_reconciliation.ipynb
-│ ├── 03_advanced_reconciliation.ipynb
-│ └── 04_visualization.ipynb
-│
-├── scripts/ # Python scripts
-│ ├── generate_data.py # Data generation
-│ ├── reconcile_basic.py # Basic reconciliation
-│ ├── advanced_reconcile.py # Advanced reconciliation
-│ └── visualize_results.py # Dashboard creation
-│
-├── outputs/ # Generated outputs
-│ ├── reports/ # CSV reports
-│ │ ├── basic_summary.csv
-│ │ ├── advanced_summary.csv
-│ │ ├── duplicate_payments.csv
-│ │ └── payment_schedule.csv
-│ └── visualizations/ # Charts and dashboards
-│ └── reconciliation_dashboard.png
-│
-│
-├── requirements.txt # Python dependencies
-├── README.md # This file
-└── .gitignore # Git ignore file
 
-text
+```
+order_payment_reconciliation/
+├── data/
+│   ├── raw/                          # Generated raw data
+│   │   ├── orders.csv
+│   │   └── payments.csv
+│   └── processed/                    # Reconciliation results
+│       ├── reconciliation_basic.csv
+│       └── reconciliation_advanced.csv
+├── notebooks/                        # Exploration notebooks
+│   ├── 01_data_generation.ipynb
+│   ├── 02_reconciliation.ipynb
+│   ├── 03_advanced_reconciliation.ipynb
+│   └── 04_visualization.ipynb
+├── scripts/
+│   ├── generate_data.py              # Data generation
+│   ├── reconcile_basic.py            # Basic reconciliation
+│   ├── reconcile_advanced.py         # Advanced reconciliation
+│   └── visualize_results.py          # Dashboard creation
+├── outputs/
+│   ├── reports/                      # CSV reports
+│   │   ├── basic_summary.csv
+│   │   ├── advanced_summary.csv
+│   │   ├── duplicate_payments.csv
+│   │   └── payment_schedule.csv
+│   └── visualizations/
+│       └── reconciliation_dashboard.png
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
 ## Installation
 
 ### Prerequisites
-- Python 3.8 or higher
-- pip package manager
-- (Optional) Virtual environment tool
 
-### Step 1: Clone the Repository
+- Python 3.8 or higher
+- pip
+- (Optional) a virtual environment tool
+
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/order-payment-reconciliation.git
+git clone https://github.com/vincentius474/order-payment-reconciliation.git
 cd order-payment-reconciliation
-Step 2: Create Virtual Environment
-Windows:
+```
 
-bash
+### 2. Create a virtual environment
+
+**Windows**
+
+```bash
 python -m venv venv
 venv\Scripts\activate
-macOS/Linux:
+```
 
-bash
+**macOS / Linux**
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
-Step 3: Install Dependencies
-bash
+```
+
+### 3. Install dependencies
+
+```bash
 pip install --upgrade pip
 pip install -r requirements.txt
-Note: If you encounter installation issues, install packages sequentially:
+```
 
-bash
+If you run into installation issues, install the packages one at a time:
+
+```bash
 pip install numpy==1.24.3
 pip install pandas==2.1.0
 pip install matplotlib==3.7.2
 pip install seaborn==0.13.0
 pip install openpyxl==3.1.2
 pip install Faker==20.0.0
-Step 4: Verify Installation
-bash
-python -c "import pandas; print(f'Pandas version: {pandas.__version__}')"
-🏃 Quick Start
-Run the complete pipeline with these commands:
+```
 
-bash
-# 1. Create necessary directories
+### 4. Verify the installation
+
+```bash
+python -c "import pandas; print(f'Pandas version: {pandas.__version__}')"
+```
+
+## Quick Start
+
+Run the full pipeline:
+
+```bash
+# 1. Create the output directories
 mkdir -p data/raw data/processed outputs/reports outputs/visualizations
 
 # 2. Generate synthetic data
@@ -145,145 +161,137 @@ python scripts/reconcile_basic.py
 # 4. Run advanced reconciliation
 python scripts/reconcile_advanced.py
 
-# 5. Create visualizations
+# 5. Create the dashboard
 python scripts/visualize_results.py
-Expected Output
-After running, you'll see:
+```
 
-## Expected Output
-- Console output showing reconciliation statistics
-- CSV files in data/processed/ and outputs/reports/
-- Dashboard image in outputs/visualizations/
+**Expected output**
+
+- Reconciliation statistics printed to the console
+- CSV files in `data/processed/` and `outputs/reports/`
+- A dashboard image in `outputs/visualizations/`
 
 ## Data Generation
-The generate_data.py script creates realistic datasets with:
 
-## Orders Data (500 records)
-- Order IDs with sequential numbering
-- Realistic customer IDs (UUID format)
+`generate_data.py` creates two datasets.
+
+### Orders (500 records)
+
+- Sequential order IDs
+- Customer IDs in UUID format
 - Order dates spanning 90 days
 - Multiple line items with tax and shipping
-- Status tracking (pending, completed, shipped, cancelled, refunded)
+- Status tracking: pending, completed, shipped, cancelled, refunded
 - Dual currency support (USD/EUR)
 
-## Payments Data (varies)
-1. Multiple payment methods (credit card, PayPal, bank transfer, crypto)
-2. Transaction status (success, pending, failed)
-3. Intentional discrepancies:
-- 80% full payments
-- 10% partial payments
-- 5% overpayments
-- 5% missing payments
+### Payments (record count varies)
 
-4. Duplicate payments (8% of orders)
-5. Currency conversion edge cases
-6. Data quality issues (nulls, negative amounts, future dates)
+- Payment methods: credit card, PayPal, bank transfer, crypto
+- Transaction statuses: success, pending, failed
+- Intentional discrepancies across orders:
+
+  | Scenario | Share of orders |
+  | --- | --- |
+  | Full payments | 80% |
+  | Partial payments | 10% |
+  | Overpayments | 5% |
+  | Missing payments | 5% |
+
+- Duplicate payments on 8% of orders
+- Currency conversion edge cases
+- Data quality issues: nulls, negative amounts, and future dates
 
 ## Reconciliation Logic
 
-## Basic Reconciliation
-1. Matches orders with payments
-2. Calculates payment totals per order
-3. Classifies orders into:
-- Fully Paid
-- Underpaid
-- Overpaid
-- No Payment
+### Basic reconciliation
 
-## Advanced Reconciliation Features
+1. Match orders to payments
+2. Calculate the total paid per order
+3. Classify each order as one of:
+   - **Fully Paid**
+   - **Underpaid**
+   - **Overpaid**
+   - **No Payment**
 
-1.Currency Standardization
+### Advanced reconciliation
 
-- Converts all payments to USD using exchange rates
-
-- Handles multi-currency transactions
-
-2. Duplicate Detection
-
-- Identifies potential duplicate payments within time windows
-
-- Flags transactions with similar amounts
-
-3. Payment Schedule Analysis
-
-- Calculates days to first payment
-
-- Analyzes payment patterns
-
-- Identifies installment payments
-
-4. Risk Assessment
-
-- Flags orders with multiple payments
-
-- Identifies significant overpayments
-
-- Detects unusual payment patterns
-
-5. Data Quality Checks
-
-- Validates payment dates
-
-- Filters failed transactions
-
-- Handles null values
+1. **Currency standardisation**
+   - Converts all payments to USD using exchange rates
+   - Handles multi-currency transactions
+2. **Duplicate detection**
+   - Identifies potential duplicate payments within time windows
+   - Flags transactions with similar amounts
+3. **Payment schedule analysis**
+   - Calculates days to first payment
+   - Analyses payment patterns
+   - Identifies installment payments
+4. **Risk assessment**
+   - Flags orders with multiple payments
+   - Identifies significant overpayments
+   - Detects unusual payment patterns
+5. **Data quality checks**
+   - Validates payment dates
+   - Filters out failed transactions
+   - Handles null values
 
 ## Visualization
-The dashboard includes six interactive plots:
 
-1. Payment Status Distribution - Bar chart of reconciliation statuses
+The dashboard contains six plots:
 
-2. Order Value Distribution - Histogram comparing paid vs. all orders
-
-3. Payment Rate Analysis - Distribution of payment completeness
-
-4. Payment Timing Analysis - Days to first payment histogram
-
-5. Payment Methods - Pie chart of payment method usage
-
-6. Risk Analysis - Order value by risk level
+1. **Payment status distribution:** bar chart of reconciliation statuses
+2. **Order value distribution:** histogram comparing paid orders with all orders
+3. **Payment rate analysis:** distribution of payment completeness
+4. **Payment timing analysis:** histogram of days to first payment
+5. **Payment methods:** pie chart of payment method usage
+6. **Risk analysis:** order value by risk level
 
 ## Output Examples
-- Basic Summary Report
 
-Total Orders: 500
-Total Order Value: $45,231.50
-Total Payments Received: $43,120.75
-Orders Fully Paid: 380
-Orders Underpaid: 85
-Orders Overpaid: 20
-Orders No Payment: 15
+*Illustrative figures; your generated data will differ.*
 
-Sample Reconciliation Results
-order_id	total_amount	total_paid	difference	status	high_risk
-ORD-00001	$150.00	$150.00	$0.00	Fully Paid	False
-ORD-00002	$75.50	$50.00	$25.50	Underpaid	False
-ORD-00003	$200.00	$210.00	-$10.00	Overpaid	True
+### Basic summary report
+
+```
+Total Orders:             500
+Total Order Value:        $45,231.50
+Total Payments Received:  $43,120.75
+Orders Fully Paid:        380
+Orders Underpaid:         85
+Orders Overpaid:          20
+Orders No Payment:        15
+```
+
+### Sample reconciliation results
+
+| order_id | total_amount | total_paid | difference | status | high_risk |
+| --- | --- | --- | --- | --- | --- |
+| ORD-00001 | $150.00 | $150.00 | $0.00 | Fully Paid | False |
+| ORD-00002 | $75.50 | $50.00 | $25.50 | Underpaid | False |
+| ORD-00003 | $200.00 | $210.00 | -$10.00 | Overpaid | True |
 
 ## Contributing
-- Contributions are welcome! Here's how you can help:
 
-Fork the repository
-Create a feature branch (git checkout -b feature/AmazingFeature)
-Commit changes (git commit -m 'Add AmazingFeature')
-Push to branch (git push origin feature/AmazingFeature)
-Open a Pull Request
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/AmazingFeature`
+3. Commit your changes: `git commit -m "Add AmazingFeature"`
+4. Push to the branch: `git push origin feature/AmazingFeature`
+5. Open a Pull Request
 
 ## License
-- This project is licensed under the MIT License - see the LICENSE file for details.
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-- Faker library for realistic data generation
-- Pandas team for data manipulation tools
-- Matplotlib/Seaborn for visualization capabilities
 
+- [Faker](https://faker.readthedocs.io/) for realistic data generation
+- [pandas](https://pandas.pydata.org/docs/) for data manipulation
+- [Matplotlib](https://matplotlib.org/) and [Seaborn](https://seaborn.pydata.org/) for visualisation
 
-- Project Link: https://github.com/vincentius474/order-payment-reconciliation
+## Links
 
-## Show Your Support
-- If this project helped you, please give it a star ⭐ on GitHub!
+- Project: https://github.com/vincentius474/order-payment-reconciliation
+- [Python virtual environments guide](https://realpython.com/python-virtual-environments-a-primer/)
 
-## Additional Resources
-- Pandas Documentation (https://pandas.pydata.org/docs/)
-- Data Reconciliation Best Practices (https://example.com/)
-- Python Virtual Environments Guide (https://realpython.com/python-virtual-environments-a-primer/)
+If this project helped you, consider giving it a star on GitHub.
