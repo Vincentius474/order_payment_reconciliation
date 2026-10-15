@@ -1,12 +1,9 @@
 # Order-Payment Reconciliation System
 
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Code Style](https://img.shields.io/badge/code%20style-black-black.svg)](https://github.com/psf/black)
-
 A data reconciliation system for e-commerce order and payment validation. The project matches orders from an Order Management System (OMS) against payments from a payment gateway, and handles partial payments, overpayments, duplicates, currency conversion, and data quality issues.
 
-![Reconciliation dashboard](OPR_Pic-1.png)
+<img width="1489" height="1025" alt="screenshotB" src="https://github.com/user-attachments/assets/1f190788-9f40-42b1-869f-322a6654c252" />
+
 
 ## Table of Contents
 
